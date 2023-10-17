@@ -12,11 +12,11 @@ export class HeaderComponent implements OnInit {
   currentSeason: number = new Date().getFullYear();
   standingsResponseData!: standingsResponse;
   countries: country[] = [
-    { id: 1, name: 'England', topLeagueId: 39 },
-    { id: 2, name: 'Spain', topLeagueId: 140 },
-    { id: 3, name: 'France', topLeagueId: 61 },
-    { id: 4, name: 'Germany', topLeagueId: 78 },
-    { id: 5, name: 'Italy', topLeagueId: 135 },
+    { id: 1, name: 'england', topLeagueId: 39 },
+    { id: 2, name: 'spain', topLeagueId: 140 },
+    { id: 3, name: 'france', topLeagueId: 61 },
+    { id: 4, name: 'germany', topLeagueId: 78 },
+    { id: 5, name: 'italy', topLeagueId: 135 },
   ];
   currentItemSelected!: number;
 

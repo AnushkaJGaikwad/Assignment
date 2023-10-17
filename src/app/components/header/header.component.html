@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between mt-2 text-secondary border p-2">
         <ng-container *ngFor="let country of countries; let i = index" >
             <div id="{{country?.name}}Select" (click)="getTopStandingLeaguesForCountry(i, country)"  >
-                <span class="links" [ngClass]="{'active': i === currentItemSelected}" >{{country?.name}}</span>
+                <span class="links" [ngClass]="{'active': i === currentItemSelected}" >{{country?.name | titlecase}}</span>
             </div>
         </ng-container>
     </div>
