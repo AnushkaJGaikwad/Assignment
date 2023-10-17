@@ -1,0 +1,9 @@
+.active {
+  margin: 2px;
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.links {
+  cursor: pointer;
+}

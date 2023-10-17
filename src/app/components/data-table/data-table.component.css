@@ -1,0 +1,9 @@
+.team-logo {
+    height: 25px;
+    width: 25px;
+}
+
+.link {
+   text-decoration: none;
+   cursor: pointer;
+}

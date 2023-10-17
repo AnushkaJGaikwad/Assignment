@@ -1,0 +1,31 @@
+<div class="container mt-3">
+  <table class="table table-bordered" *ngIf="lastTenResults?.length">
+    <tbody>
+      <tr *ngFor="let team of lastTenResults; let i = index">
+        <td>
+          <img
+            [src]="team?.teams?.home?.logo"
+            class="img-responsive team-logo"
+            alt=""
+          />
+        </td>
+        <td>{{ team?.teams?.home?.name }}</td>
+        <td>{{ team?.goals?.home }}</td>
+        <td>-</td>
+        <td>{{ team?.goals?.away }}</td>
+        <td>{{ team?.teams?.away?.name }}</td>
+        <td>
+          <img
+            [src]="team?.teams?.away?.logo"
+            class="img-responsive team-logo"
+            alt=""
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!lastTenResults?.length">
+    <app-loader></app-loader>
+  </div>
+  <button class="btn btn-primary" (click)="goBackToHome()">Back</button>
+</div>

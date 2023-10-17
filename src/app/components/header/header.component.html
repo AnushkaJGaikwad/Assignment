@@ -1,0 +1,10 @@
+<div class="container mt-2">
+    <div class="bg-dark bg-gradient font-weight-bold text-center text-primary text-white p-2" >{{title | uppercase}}</div>
+    <div class="d-flex justify-content-between mt-2 text-secondary border p-2">
+        <ng-container *ngFor="let country of countries; let i = index" >
+            <div id="{{country?.name}}Select" (click)="getTopStandingLeaguesForCountry(i, country)"  >
+                <span class="links" [ngClass]="{'active': i === currentItemSelected}" >{{country?.name}}</span>
+            </div>
+        </ng-container>
+    </div>
+</div>
